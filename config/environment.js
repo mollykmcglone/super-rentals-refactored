@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'super-rentals-sp',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyDNls04GEXj16OZPyknLhz8BaTJRXxVmq8",
+      authDomain: "super-rentals-c6ef5.firebaseapp.com",
+      databaseURL: "https://super-rentals-c6ef5.firebaseio.com",
+      storageBucket: "super-rentals-c6ef5.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
