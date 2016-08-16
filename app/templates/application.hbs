@@ -1,1 +1,11 @@
-{{outlet}}
+<div>
+  <header class="jumbotron">
+    <h1>Super Rentals</h1>
+  </header>
+  {{outlet}}
+  <hr>
+<!-- hr = grey line separating content from footer -->
+  <footer>
+    {{#link-to "contact"}}Our representatives would love to help!{{/link-to}}
+  </footer>
+</div>
