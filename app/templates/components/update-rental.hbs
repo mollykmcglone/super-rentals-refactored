@@ -1,0 +1,30 @@
+{{#if updateRentalForm}}
+  <h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+  <div>
+    <form>
+      <div>
+        <h2>Owner</h2>
+        {{input value=owner id="owner" placeholder=rental.owner}}
+      </div>
+      <div>
+        <h2>Type</h2>
+        {{input value=type id="type" placeholder=rental.type}}
+      </div>
+      <div>
+        <h2>City</h2>
+        {{input value=city id="city" placeholder=rental.city}}
+      </div>
+      <div>
+        <h2>Number of Bedrooms</h2>
+        {{input value=bedrooms id="bedrooms" placeholder=rental.bedrooms}}
+      </div>
+      <div>
+        <h2>Image URL</h2>
+        {{input value=image id="image" placeholder=rental.image}}
+      </div>
+      <button {{action "update" rental}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+    <button {{action "updateRentalForm"}}>Update</button>
+  {{/if}}
